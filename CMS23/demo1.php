@@ -6,7 +6,7 @@
  * and open the template in the editor.
  */
 
-$_mysqli = new mysqli('localhost','root','5422F83E2005422F8E1F20C','PHPCMS');
+$_mysqli = new mysqli('localhost','root','5555','PHPCMS');
 if(mysqli_connect_errno()){
     echo mysqli_connect_error();   
     exit();
