@@ -1,0 +1,4 @@
+<?php defined('IN_IA') or exit('Access Denied');?><?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('common/header', TEMPLATE_INCLUDEPATH)) : (include template('common/header', TEMPLATE_INCLUDEPATH));?>
+<h1> 评价管理 </h1>
+<a href="javascript:;" class="input-group-btn imgverify"><img src="./index.php?c=utility&amp;a=code&amp;0.8623474501646123" onclick="this.src='./index.php?c=utility&amp;a=code&amp;' + Math.random();"></a>
+<?php (!empty($this) && $this instanceof WeModuleSite || 1) ? (include $this->template('common/footer', TEMPLATE_INCLUDEPATH)) : (include template('common/footer', TEMPLATE_INCLUDEPATH));?>

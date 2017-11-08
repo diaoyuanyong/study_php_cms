@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://www.haoid.cn" versionCode="0.6">
+	<application setting="true">
+		<name><![CDATA[拼车]]></name>
+		<identifie><![CDATA[wx_pingche11]]></identifie>
+		<version><![CDATA[2.7]]></version>
+		<type><![CDATA[business]]></type>
+		<ability><![CDATA[汽车]]></ability>
+		<description><![CDATA[一款微信端的拼车插件]]></description>
+		<author><![CDATA[test]]></author>
+		<url><![CDATA[http://www.we7.cc/]]></url>
+	</application>
+	<platform>
+		<subscribes>
+			<message type="text" />
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="shortvideo" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="unsubscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="view" />
+			<message type="merchant_order" />
+		</subscribes>
+		<handles>
+			<message type="image" />
+			<message type="voice" />
+			<message type="video" />
+			<message type="shortvideo" />
+			<message type="location" />
+			<message type="link" />
+			<message type="subscribe" />
+			<message type="qr" />
+			<message type="trace" />
+			<message type="click" />
+			<message type="merchant_order" />
+			<message type="text" />
+		</handles>
+		<rule embed="true" />
+		<card embed="false" />
+	</platform>
+	<bindings>
+		<cover>
+			<entry title="拼车首页" do="index" state="" direct="false" />
+		</cover>
+		<rule>
+			<entry title="评论管理" do="manager7" state="" direct="false" />
+			<entry title="轮播图片设置" do="carousel" state="" direct="false" />
+			<entry title="参数配置" do="manager2" state="" direct="false" />
+			<entry title="用户管理" do="manager3" state="" direct="false" />
+			<entry title="信息管理" do="manager4" state="" direct="false" />
+			<entry title="支付管理" do="manager5" state="" direct="false" />
+		</rule>
+	</bindings>
+	<permissions>
+	</permissions>
+	<install><![CDATA[]]></install>
+	<uninstall><![CDATA[]]></uninstall>
+	<upgrade><![CDATA[]]></upgrade>
+</manifest>

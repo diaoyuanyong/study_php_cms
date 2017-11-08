@@ -1,0 +1,18 @@
+ <header class="scrollPageNum1 scrollPageNum">
+    <div class="w1000">
+      <!--logo-->
+      <div id="logo"> <a href="/"><img style="width:210px;height:98px" src="{if !empty($_W['setting']['copyright']['flogo'])}{php echo tomedia($_W['setting']['copyright']['flogo']);}{else}./resource/wzyun/images/logowap.png{/if}" /></a> </div>
+      <!--logo end-->
+      <!--nav-->
+      <nav>
+     <li><a class="nav_a1" href="/"><span>首页</span></a></li>
+ <li><a class="nav_a2{if $_GET[a]=='anli' }_current current{/if}" href="/web/index.php?c=account&a=anli"><span>案例展示</span></a></li>
+ <li><a class="nav_a3{if $_GET[a]=='daili' or $_GET[a]=='taocan'}_current current{/if}" href="/web/index.php?c=account&a=taocan"><span>价格体系</span></a></li>
+ <li><a class="nav_a4{if $_GET[a]=='gnjs' }_current current{/if}" href="/web/index.php?c=account&a=gnjs"><span>功能介绍</span></a></li>
+ <li><a class="nav_a5" href="/web/index.php?c=user&a=login&"><span>会员登陆</span></a></li>
+      </nav>
+      <!--nav end-->
+      <div class="clear"></div>
+    </div>
+  </header>      
+                <!--header end-->

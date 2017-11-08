@@ -1,0 +1,105 @@
+2017-07-24 15:40:04 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500882005</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 15:40:04 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 15:40:04 response :
+------------
+
+2017-07-24 18:07:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500890871</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 18:07:51 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 18:07:51 response :
+------------
+
+2017-07-24 21:25:51 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500902751</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 21:25:52 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 21:25:52 response :
+------------
+
+2017-07-24 21:25:54 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500902755</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 21:25:54 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 21:25:54 response :
+------------
+
+2017-07-24 21:25:55 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500902755</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 21:25:55 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 21:25:55 response :
+------------
+
+2017-07-24 21:25:57 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500902758</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 21:25:57 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 21:25:57 response :
+------------
+
+2017-07-24 22:34:14 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1500906854</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2017-07-24 22:34:14 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2017-07-24 22:34:14 response :
+------------
+
