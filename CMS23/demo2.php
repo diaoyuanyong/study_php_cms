@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-$_mysqli = new mysqli('localhost','root','5422F83E2005422F8E1F20C','PHPCMS');
+$_mysqli = new mysqli('localhost','root','diaoyuanyong','PHPCMS');
  
 $_mysqli->set_charset('utf8');
 
