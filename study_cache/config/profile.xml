@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <taglib>
+        <name>wecomediao1</name>
+        <value>DIAO中文网</value>
+    </taglib>
+     <taglib>
+        <name>wecomediao2</name>
+        <value>DIAO中文网2</value>
+    </taglib>
+     <taglib>
+        <name>wecomediao3</name>
+        <value>DIAO中文网3</value>
+    </taglib>
+</root>

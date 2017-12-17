@@ -1,0 +1,15 @@
+<?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+//生成一个文件，wenwen.php  ,$date  = DIAOYUANYONG
+//file_put_contents('wenwen.php','DIAOYUANYONG');
+//读取一个文件里面的内容 ddasd
+ddd
+
+
+echo   file_get_contents('wenwen.php');
+
