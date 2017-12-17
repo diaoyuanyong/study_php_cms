@@ -25,6 +25,7 @@ print_r ($_result->fetch_row());
 print_r ($_result->fetch_row());  
 print_r ($_result->fetch_row());  
 DASDAS;
+ASDASDSA;
 
 if($_mysqli->errno){
     echo $_mysqli->error;
