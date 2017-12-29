@@ -5,7 +5,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-//管理员实体类
+//管理实体类
 class Manage{
     private $_tpl;
     private $_admin_user;
@@ -67,7 +67,7 @@ class Manage{
 }
 
 
-    //查询管理员工
+    //查询管理
 
     public  function getManage(){
         
@@ -99,7 +99,7 @@ class Manage{
     }
     
     
-    //查询管理员工
+    //查询管理
     public  function getManage1(){
            $_db = DB::getDB();
             $_sql = "SELECT m.id,
