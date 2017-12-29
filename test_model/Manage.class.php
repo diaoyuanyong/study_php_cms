@@ -296,16 +296,13 @@ class Manage{
                     if($this->Poor !=1) {
                         while($this->Poor !=1){
                             $this->Poor--;
-                                 if($this->Poor ==1){
-                                     $this->Poor = $value-1;
-                                     goto ret;
-                                 }
-                                 
+                            if($this->Poor ==1){
+                                $this->Poor = $value-1;
+                                goto ret;
+                            }
                         }
-                       
-                 
                     }else if($this->Poor==1){
-                          $this->Poor=$value+1;
+                        $this->Poor=$value+1;
                     }
                }   
                ret:
