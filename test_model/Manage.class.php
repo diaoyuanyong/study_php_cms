@@ -253,4 +253,62 @@ class Manage{
     }
  
   
+    /*function summaryOne() ; 计算汇总,
+     * 
+     *
+     * 
+     *       
+     */
+    
+    private $bb; //汇总
+    public function summaryOne(){
+        $db =DB::getDB();
+        $sql = "SELECT id FROM `cms_manage`";
+        $_result = $db->query($sql);
+        $dd =  array();
+         while (!!$row = $_result->fetch_assoc()) {
+             $dd[] =  $row['id'];
+         }
+         foreach ($dd as $key=>$value){
+             $this->bb += $value;
+         }
+         DB::unDB($_result, $_db);
+         return $this->bb;
+        }
+        
+        
+    /*---填补没有的数据库id;
+     *---class Sort();
+     *private $this->Poor;  差值,可以在ID是乱序时候,填补没有的id,从大倒小.
+     * private  $this->bbArr; 接收结果集 mysqli的 rows['id'] 数组     
+     */
+       
+        public  function Sort(){
+            $db =DB::getDB();
+            $sql = "SELECT id FROM `cms_manage`";
+            $_result = $db->query($sql);
+            $this->bbArr =  array();
+                while (!!$row = $_result->fetch_assoc()) {
+                    $this->bbArr[]=  $row['id'];
+                }
+                 foreach ($this->bbArr as $key=>$value){
+                 $this->Poor= $value-$key;
+                 
+                        while($this->Poor !=1){
+                            $this->Poor--;
+                                 if($this->Poor ==1){
+                                     $this->Poor = $value-1;
+                                     goto ret;
+                                 }
+                                 
+                        }
+                        if($this->Poor==1){
+                            $this->Poor = $value-1;
+                                     goto ret;
+                        }
+               }   
+               ret:
+                DB::unDB($_result, $_db);
+                return $this->Poor;
+        }
 }
