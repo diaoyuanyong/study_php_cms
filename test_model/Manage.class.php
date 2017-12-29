@@ -283,7 +283,7 @@ class Manage{
      * private  $this->bbArr; 接收结果集 mysqli的 rows['id'] 数组     
      */
        
-        public  function Sort(){
+         public  function Sort(){
             $db =DB::getDB();
             $sql = "SELECT id FROM `cms_manage`";
             $_result = $db->query($sql);
@@ -292,8 +292,8 @@ class Manage{
                     $this->bbArr[]=  $row['id'];
                 }
                  foreach ($this->bbArr as $key=>$value){
-                 $this->Poor= $value-$key;
-                 
+                    $this->Poor= $value-$key;
+                    if($this->Poor !=1) {
                         while($this->Poor !=1){
                             $this->Poor--;
                                  if($this->Poor ==1){
@@ -302,13 +302,14 @@ class Manage{
                                  }
                                  
                         }
-                        if($this->Poor==1){
-                            $this->Poor = $value-1;
-                                     goto ret;
-                        }
+                       
+                 
+                    }else if($this->Poor==1){
+                          $this->Poor=$value+1;
+                    }
                }   
                ret:
-                DB::unDB($_result, $_db);
-                return $this->Poor;
+               DB::unDB($_result, $_db);
+               return $this->Poor;
         }
 }
