@@ -36,9 +36,9 @@ class Manage{
                         break;
                 case "add":
                     if(isset($_POST['send'])){
-                        $this->_admin_user = $_POST['admin_user'];
+                        $this->_admin_user = htmlspecialchars(trim($_POST['admin_user']));
                         $this->_admin_pass =sha1($_POST['admin_pass']);
-                        $this->_level = $_POST['level'];
+                        $this->_level = htmlspecialchars(strim($_POST['level']));
                             if($this->addManage()){
                                     Tool::alertLocation('Add Success', 'manage.php?action=list');
 
