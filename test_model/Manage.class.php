@@ -18,7 +18,7 @@ class Manage{
     }
     //业务流程控制器
     private function Action(){
-            switch(@$_GET['action']){    
+            switch($_GET['action']){    
                 case "list":
                     $this->_tpl->assign('list',true);
                     $this->_tpl->assign('title','管理员列表');
