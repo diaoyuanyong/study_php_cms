@@ -98,6 +98,65 @@ class Manage{
            return $_htmlDate;
     }
     
+    
+    //查询管理员工
+    public  function getManage1(){
+           $_db = DB::getDB();
+            $_sql = "SELECT m.id,
+                                m.admin_user,
+                                m.login_count,
+                                m.last_ip,
+                                m.last_time,
+                                m.reg_time,
+                                l.level_name
+                            FROM 
+                                cms_manage m,
+                                cms_level l
+                            WHERE
+                             l.level = m.level
+                            ORDER BY
+                               id ASC
+                                LIMIT 0,100";
+                $stem=$_db->prepare($_sql);
+                $stem->bind_result($mid,$madmin_user,$mlogin_count,$mlast_ip,$mlast_time,$mreg_time,$llevel_name);
+                $stem->execute();
+                $stem->store_result();
+                $result=$stem->result_metadata();
+                //数据库字段数量；
+                    $this->length =$result->field_count;
+//                        var_dump($result);
+                        //print_r($this->length);
+                        //echo gettype($result);
+                        //echo gettype($this->length) ;
+            while($file = $result->fetch_field()){
+               $fetch_name[]=  $file->name;
+            }
+            //获取数据表的字段，已数组的形式排序
+             $this->stemSqlName = count($fetch_name);
+                   //echo gettype($this->stemSqlName);
+            //这里遍历出数据;
+            $ay=array();
+//            $stem->bind_result($mid,$madmin_user,$mlogin_count,$mlast_ip,$mlast_time,$mreg_time,$llevel_name);
+              while($stem->fetch()){
+               $fetchAll[id]= $mid;
+               $fetchAll[admin_user] = $madmin_user;
+               $fetchAll[level] = $llevel_name;
+               $fetchAll[login] = $mlogin_count;
+               $fetchAll[ip] = $mlast_ip;
+               $fetchAll[time] = $mlast_time;
+               $fetchAll[reg_time] = $mreg_time;
+               //print_r($fetchAll);
+                    $ay[]=$fetchAll;
+               } 
+               
+               //print_r($ay);
+//               foreach($ay as $key=>$value){
+//                    print_r($value[id]);
+//               }
+            $stem->free_result();
+            $stem->close();
+            return $ay;
+    }
     /*
      * 
      * 
