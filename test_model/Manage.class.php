@@ -189,10 +189,7 @@ class Manage{
                 $result=$stem->result_metadata();
                 //数据表字段数量；
                     $this->length =$result->field_count;
-//                        var_dump($result);
-                        //print_r($this->length);
-                        //echo gettype($result);
-                        //echo gettype($this->length) ;
+
             while($file = $result->fetch_field()){
                $fetch_name[]=  $file->name;
             }
