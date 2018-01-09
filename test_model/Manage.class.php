@@ -189,14 +189,11 @@ class Manage{
                 $result=$stem->result_metadata();
                 //数据表字段数量；
                     $this->length =$result->field_count;
-
             while($file = $result->fetch_field()){
                $fetch_name[]=  $file->name;
             }
             //获取数据表的字段，已数组的形式排序
              $this->stemSqlName = count($fetch_name);
-                   //echo gettype($this->stemSqlName);
-            //这里遍历出数据;
             $ay=array();
             while($stem->fetch()){
                $fetchAll[id]= $id;
@@ -206,18 +203,11 @@ class Manage{
                $fetchAll[ip] = $last_ip;
                $fetchAll[time] = $last_time;
                $fetchAll[reg_time] = $reg_time;
-               //print_r($fetchAll);
                     $ay[]=$fetchAll;
                } 
-               
-               //print_r($ay);
-//               foreach($ay as $key=>$value){
-//                    print_r($value[id]);
-//               }
             $stem->free_result();
             $stem->close();
             return $ay;
-            
     }
     
     public function addManage(){
