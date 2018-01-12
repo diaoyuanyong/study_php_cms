@@ -14,7 +14,7 @@ function imagecropper($source_path, $target_width, $target_height)
     $source_mime   = $source_info['mime'];
     $source_ratio  = $source_height / $source_width;
     $target_ratio  = $target_height / $target_width;
- 
+ dd
     // 源图过高
     if ($source_ratio > $target_ratio)
     {
