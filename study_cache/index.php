@@ -8,7 +8,7 @@
 
 //include './template.inc.php';
 //require  dirname(__FILE__).'/init.inc.php';
-global  $_tpl;
+global  $_tpl;dddddd
 //声明一个变量
 $_name = 'diaoyuanyong';
 $_content = 'AAAA';
