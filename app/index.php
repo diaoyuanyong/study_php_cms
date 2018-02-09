@@ -13,3 +13,16 @@ define('DB_HOST','localhost');										//主机IP
                  $_sql = "INSERT INTO `PHPCMS`.`tg_flower` (`tg_flower`) VALUES ('');";
                  $_result = $_mysqli->query($_sql);
                     
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                 
